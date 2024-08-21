@@ -1,0 +1,28 @@
+from cgitb import text
+from tkinter import *
+
+m = Tk()
+b0 = Button(m,text="OK")
+b0.grid(column = 0, row = 4)
+e0 = Entry(m)
+e0.grid(column = 0, row = 1)
+e1 = Entry(m)
+e1.grid(column = 0, row = 3)
+l0 = Label(m, text = "ID")
+l0.grid(column = 0, row = 0)
+l0 = Label(m, text = "Strekkode")
+l0.grid(column = 0, row = 2)
+l1 = Label(m, text = "Navn:")
+l1.grid(column = 1, row = 0)
+l2 = Label(m, text = "Strekkode:")
+l2.grid(column = 1, row = 1)
+l3 = Label(m, text = "Klubb:")
+l3.grid(column = 1, row = 2)
+l4 = Label(m, text = "ID:")
+l4.grid(column = 1, row = 3)
+l5 = Label(m, text = "Status:")
+l5.grid(column = 1, row = 4)
+l6 = Label(m, text = "Dato:")
+l6.grid(column = 1, row = 5)
+
+m.mainloop()
