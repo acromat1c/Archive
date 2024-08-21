@@ -1,0 +1,5 @@
+python -m flask --app flaskr run --debug
+python -m coverage run -m pytest
+python -m flask --app flaskr init-db
+gunicorn -w 1 'flaskr:create_app()'
+gunicorn --config ./run.ini -w 1 'flaskr:create_app()'

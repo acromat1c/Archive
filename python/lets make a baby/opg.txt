@@ -1,0 +1,12 @@
+ *13.17 (Baby name popularity ranking) The popularity ranking of baby names 
+from years 2001 to 2010 are downloaded from www.ssa.gov/oact/babynames 
+and stored in files named babynameranking2001.txt, babynameranking2002.txt, 
+…, and babynameranking2010.txt. The files are stored 
+in https://liveexample.pearsoncmg.com/data/babynameranking2001.txt, 
+etc. Each file contains 1,000 lines. Each line contains a ranking, 
+a boy’s name, number for the boy’s name, a girl’s name, and the number 
+for the girl’s name. For example, the first two lines in the 
+file babynameranking2010.txt are as follows:
+
+1	Jacob  21875        Isabella     22731 
+2	Ethan  17866        Sophia       20477
