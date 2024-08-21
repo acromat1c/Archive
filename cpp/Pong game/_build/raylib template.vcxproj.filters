@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{21EB8090-0D4E-1035-B6D3-48EBA215DCB7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E9C7FDCE-D52A-8D73-7EB0-C5296AF258F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{a51a3378-3b10-48cd-adfa-ca1becf7099a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\resources\Yoda_Image.png">
+      <Filter>resources</Filter>
+    </Image>
+    <Image Include="..\resources\Darth_Image.png">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\resources\Death_Sound.wav">
+      <Filter>resources</Filter>
+    </Media>
+    <Media Include="..\resources\Darth_Sound.wav">
+      <Filter>resources</Filter>
+    </Media>
+    <Media Include="..\resources\Super.wav">
+      <Filter>resources</Filter>
+    </Media>
+    <Media Include="..\resources\hit.wav">
+      <Filter>resources</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

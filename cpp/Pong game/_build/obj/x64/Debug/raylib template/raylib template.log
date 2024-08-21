@@ -1,0 +1,17 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: The intermediate directory (obj\x64\Debug\raylib template\) contains files shared from another project (raylib template.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Game.cpp
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(9,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(67,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(116,25): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(117,25): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(154,25): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(158,25): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(163,27): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(167,27): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(189,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(195,80): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(200,81): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(206,82): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(261,20): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_build\Game.cpp(262,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  raylib template.vcxproj -> C:\Users\Acromatic\Documents\Visual Studeo Projects\C++\Pong game\_bin\Debug\raylib template.exe
