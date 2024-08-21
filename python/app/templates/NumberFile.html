@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{%block head%}
+<title>Biggie Cheese Numbers</title>
+<style>
+    body {
+        font-size: xx-large;
+    }
+</style>
+{% endblock %}
+{% block body %}
+<header id="header">
+    The Number Room
+</header>
+<main>
+    <form action="/NumberFile" method="post">
+        <button id="Plus" name="Plus" value="make bigger">Make number bigger</button>
+    </form>
+    <p>
+        Current Number: {{ CurrentNumber }}
+    </p>
+    <a href="static/data/Number.txt" download="Number">
+        Download Number file (txt)
+    </a>
+</main>
+{% endblock %}

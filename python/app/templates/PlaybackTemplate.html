@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{%block head%}
+<title>Biggie Cheese Cinima</title>
+<link href="static/styles/MovieTheater.css" rel="stylesheet" />
+<style>
+    #Episode {
+        color: #FFFFFF;
+        font-size: large;
+    }
+    #CommentsHeader{
+        color: #FFFFFF;
+        font-size: x-large;
+    }
+    #Comments{
+        color: #FFFFFF;
+        font-size: large;
+    }
+</style>
+{% endblock %}
+{% block body %}
+<header id="movietitle">
+    {% block title %}{% endblock %}
+</header>
+<p id="Episode">Episode #{{Episode}}</p>
+<video width="800" height="600" controls>
+    <source src="static/content/{% block path %}{% endblock %}{{Episode}}.mp4" type="video/mp4">
+</video>
+<form action="/{% block pagelink0 %}{% endblock %}" method="get">
+    <input type="number" name="Episode" id="Episode" autocomplete="off" placeholder="Ep ({{MinEpisodes}}-{{MaxEpisodes}})" style="color:#000000;" />
+    <input type="submit" />
+</form>
+<p id="CommentsHeader">Comments</p>
+<form action="/{% block pagelink1 %}{% endblock %}" method="post">
+    <input type="search" name="Comment" id="Comment" autocomplete="off" placeholder="Leave a Comment!" />
+    <input type="submit" />
+</form>
+    {% for Comment in Comments %}
+<p id="Comments">{{Comment}}</p>
+    {% endfor %}
+<p>&nbsp</p>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{%block head%}
+<title>Biggie Cheese {% block title %}{% endblock %}</title>
+<style>
+    #body {
+        font-size: xx-large;
+        background-image: url('static/content/{% block background %}{% endblock %}');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    #main{
+        font-size: x-large;
+        color: #{% block textcolorM %}{% endblock %};
+    }
+    #header{
+        color: #{% block textcolorH %}{% endblock %};
+    }
+    #footer {
+        color: #{% block textcolorF %}{% endblock %};
+    }
+</style>
+{% endblock %}
+{% block body %}
+<header id="header">
+</header>
+<main id="main">
+    <a href="static/download/{% block file %}{% endblock %}" download="{% block fileName %}{% endblock %}">
+        {% block downloadName %}{% endblock %}
+    </a>
+    <p>
+        <video src="static/content/{% block video %}{% endblock %}" autoplay alt="Preview Video"></video>
+    </p>
+</main>
+{% endblock %}

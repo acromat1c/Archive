@@ -1,0 +1,32 @@
+.centered
+{
+    text-align: center;
+}
+    
+.bigtext
+{
+    font-size: xx-large;
+    color: #80FF3F;
+}
+
+#footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    font-size: small;
+}
+
+#bigpage
+{
+    text-decoration: none;
+    font-size: xx-large;
+    color: #000000;
+}
+
+#header {
+    font-size: xx-large;
+}
+
+#body {
+    font-family: "Lucida Console", "Courier New", monospace;
+}

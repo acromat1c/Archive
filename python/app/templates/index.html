@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block head %}
+<title>Biggie Cheese Home Page</title>
+{% block index %} {% endblock %}
+{% endblock %}
+{% block body %}
+<header>
+    <a href="/MovieTheater" id="bigpage">Big Page</a>
+    <p>
+        Official Home Page of Biggie Cheese
+    </p>
+</header>
+
+<main>
+    <p>
+        You like cheese?<input type="checkbox" name="You like cheese???" id="cheesebox" formmethod="post" />
+    </p>
+    <img src="static/content/BiggieCheese.jfif" alt="Bigge the rat" id="ratimg" />
+</main>
+
+<h3>
+    U hip???
+</h3>
+<h3>
+    if unsure try &#34;help&#34;
+</h3>
+<form action="{{ path }}" method="post">
+    <input type="search" name="CBar" id="cheesebar" autocomplete="off" placeholder="Cheese Portal" />
+    <input type="button" name="Chees Button" id="cheesbutton" value="am I???" onclick="bluecheese()" />
+
+    <script>
+        function bluecheese() {
+            let mysterybox = document.getElementById("cheesebox");
+
+            if (mysterybox.checked == true) {
+                alert("yeah h0mi, w3 chi11");
+            }
+            else {
+                alert("nah, ya ain't");
+            }
+        }
+    </script>
+</form>
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{%block head%}
+<title>Biggie Cheese Chat</title>
+{{ turbo() }}
+<style>
+    #body {
+        background: #111111;
+        color: #FFFFFF;
+    }
+    #footer {
+        background: #111111;
+    }
+    .Message {
+        margin-top: 1px;
+        margin-bottom: 5px;
+        margin-left: 25%;
+        margin-right: 25%;
+        word-wrap: break-word;
+        text-align: left;
+    }
+    .Username {
+        margin-top: 10px;
+        margin-bottom: 1px;
+        margin-left: 25.5%;
+        margin-right: 25.5%;
+        color: blueviolet;
+        font-size: large;
+        word-wrap: break-word;
+        text-align: left;
+    }
+    #MessageBar {
+        width: 600px
+    }
+    #ServerID {
+        width: 25px
+    }
+    #Box {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background: #111111;
+    }
+</style>
+{% endblock %}
+{% block body %}
+<header id="header">
+    Message Board
+</header>
+<main id="MessageBoard"></main>
+<footer>
+    <pre>
+
+
+
+
+    </pre>
+</footer>
+<main style="position: fixed; bottom: 50px; width: 100%;">
+    <form method="post">
+        <input type="text" id="ServerID" name="ServerID" placeholder="SID" />
+        <input type="text" id="Username" name="Username" placeholder="Username" required />
+        <input type="search" id="MessageBar" name="MessageBar" placeholder="Message" autocomplete="off" required />
+        <input type="submit" value="Send" />
+    </form>
+    <p id="Box">
+        <input type="checkbox" id="Follow" /> Follow chat
+    </p>
+</main>
+<script>
+    let element = document.getElementById("Follow");
+    let interval = setInterval(KeepUp, 1);
+    function KeepUp() {
+        if (element.checked == true) {
+            scroll(0, 2147483647);
+        }
+    }
+</script>
+{% endblock %}
