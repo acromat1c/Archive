@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}index{% endblock %}
+{% block content %}
+<h1>Hi OwO!!!</h1>
+{% if latest_question_list %}
+    {% for question in latest_question_list %}
+        <h2>{{ question.question_text }}</h2>
+        <a href="{% url "tt:detail" question.id %}"><Button>VOTE</Button></a>
+        <a href="{% url "tt:results" question.id %}"><Button>RESULTS</Button></a>
+    {% endfor %}
+{% else %}
+<p>no!</p>
+{% endif %}
+{% endblock %}
